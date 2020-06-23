@@ -1,8 +1,4 @@
-﻿#include <stdio.h>
-#include <math.h>
 #include "Dot.h"
-#define pi 3.14
-
 
 int main() {
 	int N, angle, res;
@@ -45,18 +41,5 @@ int main() {
 
 		dot = turn_of_point(angle, N, point);
 	}
-	return 0;
-}
-
-int turn_of_point(int angle, int N, float point[]) {
-	float fi;
-	float x, y;
-
-	fi = angle * pi / 180;
-	x = (cos(fi) * point[0]) + (-sin(fi) * point[1]);
-	y = (sin(fi) * point[0]) + (cos(fi) * point[1]);
-
-	printf("x' = %f\ny' = %f\n", x, y);
-	
 	return 0;
 }
