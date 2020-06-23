@@ -1,9 +1,11 @@
-#ifndef _DOT_H
-#define _DOT_H
+#include <stdio.h>
+#include <math.h>
+#define pi 3.14
+
+int main();
 
 int turn_of_point(int angle, int N, float point[]);
 
-#endif // !_DOT_H
 
 
 
